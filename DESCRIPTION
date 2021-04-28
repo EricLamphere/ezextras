@@ -1,13 +1,13 @@
 Package: ezextras
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Utility functions to make coding and analysis even faster
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Eric",
+           family = "Lamphere",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "ericjlamphere@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Provides convenient, intuitive, easy to use utility functions for faster, easy to read code
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
