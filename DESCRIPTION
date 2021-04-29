@@ -5,8 +5,7 @@ Authors@R:
     person(given = "Eric",
            family = "Lamphere",
            role = c("aut", "cre"),
-           email = "ericjlamphere@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "ericjlamphere@gmail.com")
 Description: Provides convenient, intuitive, easy to use utility functions for faster, easy to read code
 License: MIT + file LICENSE
 Suggests: 
