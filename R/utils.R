@@ -14,12 +14,12 @@
 #' @param reg Character string containing a regular expression to be anti-matched in the given character vector.
 #' @return See \code{grepl} documentation for more information.
 #' @export
-`%^~%` <- function(x, reg){
+`%not~%` <- function(x, reg){
   !grepl(reg, x, ignore.case = TRUE, perl = TRUE)
 }
 
 #' Concatenate Strings
-#' @description Concatenate vectors after converting to character.
+#' @description Concatenate vectors after converting to character and ignoring NAs.
 #' @param x First R object to be converted to a character vector and concatenated to the left of \code{y}.
 #' @param y Second R object to be converted to a character vector and concatenated to the right of \code{x}.
 #' @return See \code{paste} documentation for more information.
