@@ -12,7 +12,7 @@ x \%&\% y
 \item{y}{Second R object to be converted to a character vector and concatenated to the right of \code{x}.}
 }
 \value{
-See \code{paste} documentation for more information.
+Character, concatenated strings \code{x} and \code{y}, less NAs. See \code{paste} documentation for more information.
 }
 \description{
 Concatenate vectors after converting to character and ignoring NAs.

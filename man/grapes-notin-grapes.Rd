@@ -12,7 +12,7 @@ x \%notin\% y
 \item{y}{Vector or NULL: the values to be matched against. Long vectors are not supported.}
 }
 \value{
-See \code{\%in\%} documentation for more information.
+Logical, whether or not \code{x} was in \code{y}. See \code{\%in\%} documentation for more information.
 }
 \description{
 Match returns a vector of the positions of (first) anti-matches of its first argument in its second.
