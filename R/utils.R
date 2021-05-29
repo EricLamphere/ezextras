@@ -15,7 +15,7 @@
 #' @param reg Character string containing a regular expression to be anti-matched in the given character vector.
 #' @return Logical, whether or not `x` doesn't match `reg.` See \code{grepl} documentation for more information.
 #' @export
-`%!~%` <- function(x, reg){
+`%not~%` <- function(x, reg){
   res <- !grepl(reg, x, ignore.case = TRUE, perl = TRUE)
   return(res)
 }
