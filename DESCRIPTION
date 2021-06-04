@@ -15,3 +15,9 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    cli,
+    crayon,
+    emo (>= 0.0.0.9000)
+Remotes: 
+    hadley/emo
