@@ -2,6 +2,6 @@
   packageStartupMessage(
     emo::ji("beers"),
     crayon::white(" ezextras "),
-    crayon::cyan(packageVersion("ezextras"))
+    crayon::cyan(utils::packageVersion("ezextras"))
   )
 }
