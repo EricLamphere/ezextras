@@ -7,7 +7,9 @@
 env_save(to = ".envirs/", envir = .GlobalEnv)
 }
 \arguments{
-\item{to}{Character, file path where the environment data will be saved}
+\item{to}{Character, file path where the environment data will be saved. Defaults to \verb{.envirs/}}
+
+\item{envir}{Environment, which environment you want to save. Defaults to \code{.GlobalEnv}}
 }
 \value{
 Invisible, location of the file containing saved environment data

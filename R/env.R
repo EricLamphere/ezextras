@@ -1,5 +1,6 @@
 #' Snapshot of Global Environment
-#' @param to Character, file path where the environment data will be saved
+#' @param to Character, file path where the environment data will be saved. Defaults to `.envirs/`
+#' @param envir Environment, which environment you want to save. Defaults to `.GlobalEnv`
 #' @return Invisible, location of the file containing saved environment data
 #' @export
 env_save <- function(to = ".envirs/", envir = .GlobalEnv){
