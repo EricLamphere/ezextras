@@ -70,7 +70,7 @@ get_latest_file <- function(from = ".envirs/") {
     purrr::map(
       file.info
     ) %>%
-    utils::setNames(list.files(from))
+    stats::setNames(list.files(from))
 
   files_times <-
     files_info %>%

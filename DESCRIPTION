@@ -19,7 +19,6 @@ Imports:
     cli,
     crayon,
     purrr,
-    emo (>= 0.0.0.9000),
-    magrittr
+    emo (>= 0.0.0.9000)
 Remotes: 
     hadley/emo
