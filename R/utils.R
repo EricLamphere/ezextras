@@ -1,8 +1,12 @@
 #' Pattern Matching
-#' @description Search for matches to an argument pattern within each element of a character vector. Uses perl style regex and ignores case. See \code{grepl} documentation for more information.
+#' @description Search for matches to an argument pattern within each element of
+#'   a character vector. Uses perl style regex and ignores case. See
+#'   \code{grepl} documentation for more information.
 #' @param x Character vector
-#' @param reg Character string containing a regular expression to be matched in the given character vector.
-#' @return Logical, whether or not `x` matches `reg.` See \code{grepl} documentation for more information.
+#' @param reg Character string containing a regular expression to be matched in
+#'   the given character vector.
+#' @return Logical, whether or not `x` matches `reg.` See \code{grepl}
+#'   documentation for more information.
 #' @export
 `%~%` <- function(x, reg){
   res <- grepl(reg, x, ignore.case = TRUE, perl = TRUE)
@@ -10,10 +14,14 @@
 }
 
 #' Anti-Pattern Matching
-#' @description Search for anti-matches to an argument pattern within each element of a character vector. Uses perl style regex and ignores case. See \code{grepl} documentation for more information.
+#' @description Search for anti-matches to an argument pattern within each
+#'   element of a character vector. Uses perl style regex and ignores case. See
+#'   \code{grepl} documentation for more information.
 #' @param x Character vector
-#' @param reg Character string containing a regular expression to be anti-matched in the given character vector.
-#' @return Logical, whether or not `x` doesn't match `reg.` See \code{grepl} documentation for more information.
+#' @param reg Character string containing a regular expression to be
+#'   anti-matched in the given character vector.
+#' @return Logical, whether or not `x` doesn't match `reg.` See \code{grepl}
+#'   documentation for more information.
 #' @export
 `%not~%` <- function(x, reg){
   res <- !grepl(reg, x, ignore.case = TRUE, perl = TRUE)
@@ -21,10 +29,14 @@
 }
 
 #' Concatenate Strings
-#' @description Concatenate vectors after converting to character and ignoring NAs.
-#' @param x First R object to be converted to a character vector and concatenated to the left of \code{y}.
-#' @param y Second R object to be converted to a character vector and concatenated to the right of \code{x}.
-#' @return Character, concatenated strings `x` and `y`, less NAs. See \code{paste} documentation for more information.
+#' @description Concatenate vectors after converting to character and ignoring
+#'   NAs.
+#' @param x First R object to be converted to a character vector and
+#'   concatenated to the left of \code{y}.
+#' @param y Second R object to be converted to a character vector and
+#'   concatenated to the right of \code{x}.
+#' @return Character, concatenated strings `x` and `y`, less NAs. See
+#'   \code{paste} documentation for more information.
 #' @export
 `%&%` <- function(x, y){
   # only print messages if length(x) == 1, otherwise the message is too long
@@ -46,11 +58,31 @@
   return(res)
 }
 
+
+#' Concatenate Strings
+#' @description Concatenate filepaths
+#' @param x Character, first part of a string to be concatenated to the
+#'   beginning of `y`
+#' @param y Character, second part f a string to be concatenated to the end of
+#'   `x`
+#' @return Character, concatenated strings `x` and `y`, with "/" added or
+#' removed when necessary
+#' @export
+`%//%` <- function(x, y) {
+  gsub("/$", "", x) %&% ifelse(is.na(x) | is.na(y), "", "/") %&% gsub("^/", "", y)
+}
+
+
+
 #' Anti-Value Matching
-#' @description Match returns a vector of the positions of (first) anti-matches of its first argument in its second.
-#' @param x Vector or NULL: the values to be matched. Long vectors are supported.
-#' @param y Vector or NULL: the values to be matched against. Long vectors are not supported.
-#' @return Logical, whether or not `x` was in `y`. See \code{%in%} documentation for more information.
+#' @description Match returns a vector of the positions of (first) anti-matches
+#'   of its first argument in its second.
+#' @param x Vector or NULL: the values to be matched. Long vectors are
+#'   supported.
+#' @param y Vector or NULL: the values to be matched against. Long vectors are
+#'   not supported.
+#' @return Logical, whether or not `x` was in `y`. See \code{%in%} documentation
+#'   for more information.
 #' @export
 `%notin%` <- function(x, y){
   res <- !(x %in% y)
@@ -59,9 +91,11 @@
 
 
 #' Remove Patterns Within String
-#' @description \code{gsub} with \code{ignore.case = TRUE, perl = TRUE, fixed = FALSE}.
+#' @description \code{gsub} with \code{ignore.case = TRUE, perl = TRUE, fixed =
+#'   FALSE}.
 #' @param x Character vector.
-#' @param pattern Character string containing a regular expression to be matched and removed from \code{x}.
+#' @param pattern Character string containing a regular expression to be matched
+#'   and removed from \code{x}.
 #' @return Character, `x` with `pattern` removed
 #' @export
 `%del%` <- function(x, pattern){

@@ -4,13 +4,13 @@
 \alias{env_save}
 \title{Snapshot of Global Environment}
 \usage{
-env_save(environment = .GlobalEnv)
+env_save(to = ".envirs/", envir = .GlobalEnv)
 }
 \arguments{
-\item{environment}{The environment to be saved}
+\item{to}{Character, file path where the environment data will be saved}
 }
 \value{
-A copy of the global environment
+Invisible, location of the file containing saved environment data
 }
 \description{
 Snapshot of Global Environment

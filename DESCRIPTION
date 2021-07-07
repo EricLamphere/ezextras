@@ -6,7 +6,7 @@ Authors@R:
            family = "Lamphere",
            role = c("aut", "cre"),
            email = "ericjlamphere@gmail.com")
-Description: Provides convenient, intuitive, easy to use utility functions for faster, easy to read code
+Description: Provides convenient, intuitive, easy to use utility functions for faster, easy to read code.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
@@ -18,6 +18,8 @@ RoxygenNote: 7.1.1
 Imports: 
     cli,
     crayon,
-    emo (>= 0.0.0.9000)
+    purrr,
+    emo (>= 0.0.0.9000),
+    magrittr
 Remotes: 
     hadley/emo

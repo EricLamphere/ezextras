@@ -7,11 +7,14 @@
 see(x)
 }
 \arguments{
-\item{x}{an R object which can be coerced to a data frame with non-zero numbers of rows and columns.}
+\item{x}{an R object which can be coerced to a data frame with non-zero
+numbers of rows and columns.}
 }
 \value{
-Invisible NULL. The functions puts up a window and returns immediately: the window can be closed via its controls or menus.
+Invisible NULL. The functions puts up a window and returns
+immediately: the window can be closed via its controls or menus.
 }
 \description{
-see(x) = View(x). See \code{View} documentation with \code{?View} for more information.
+see(x) = View(x). See \code{View} documentation with
+\code{?View} for more information.
 }

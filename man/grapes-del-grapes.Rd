@@ -9,11 +9,13 @@ x \%del\% pattern
 \arguments{
 \item{x}{Character vector.}
 
-\item{pattern}{Character string containing a regular expression to be matched and removed from \code{x}.}
+\item{pattern}{Character string containing a regular expression to be matched
+and removed from \code{x}.}
 }
 \value{
 Character, \code{x} with \code{pattern} removed
 }
 \description{
-\code{gsub} with \code{ignore.case = TRUE, perl = TRUE, fixed = FALSE}.
+\code{gsub} with \code{ignore.case = TRUE, perl = TRUE, fixed =
+  FALSE}.
 }

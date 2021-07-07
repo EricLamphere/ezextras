@@ -7,13 +7,17 @@
 x \%&\% y
 }
 \arguments{
-\item{x}{First R object to be converted to a character vector and concatenated to the left of \code{y}.}
+\item{x}{First R object to be converted to a character vector and
+concatenated to the left of \code{y}.}
 
-\item{y}{Second R object to be converted to a character vector and concatenated to the right of \code{x}.}
+\item{y}{Second R object to be converted to a character vector and
+concatenated to the right of \code{x}.}
 }
 \value{
-Character, concatenated strings \code{x} and \code{y}, less NAs. See \code{paste} documentation for more information.
+Character, concatenated strings \code{x} and \code{y}, less NAs. See
+\code{paste} documentation for more information.
 }
 \description{
-Concatenate vectors after converting to character and ignoring NAs.
+Concatenate vectors after converting to character and ignoring
+NAs.
 }
