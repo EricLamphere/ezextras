@@ -6,7 +6,8 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
+\[![R-CMD-check](https://github.com/EricLamphere/ezextras/actions/workflows/check-release.yaml/badge.svg)\]
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ezextras)](https://CRAN.R-project.org/package=ezextras)
 <!-- badges: end -->
