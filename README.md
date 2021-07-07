@@ -7,7 +7,7 @@
 
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-\[![R-CMD-check](https://github.com/EricLamphere/ezextras/actions/workflows/check-release.yaml/badge.svg)\]
+[![R-CMD-check](https://github.com/EricLamphere/ezextras/actions/workflows/check-release.yaml/badge.svg)](https://github.com/EricLamphere/ezextras/actions/workflows/check-release.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ezextras)](https://CRAN.R-project.org/package=ezextras)
 <!-- badges: end -->
